@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-angular';
+  dark: boolean = false;
+  handleDark() {
+    this.dark = !this.dark;
+  }
 }

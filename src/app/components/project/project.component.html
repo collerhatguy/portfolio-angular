@@ -6,7 +6,7 @@
         <div 
         class="reveal-btn"
         (click)="reveal()"
-        >+</div>
+        >{{visible ? "-" : "+"}}</div>
     </div>
     <div 
     [ngClass]="{'visible': visible}"
@@ -17,13 +17,13 @@
             *ngFor="let tech of project.technologies" 
             >{{ tech }}</li>
         </ul>
-        <a  
-        target="_blank" 
+        <a  target="_blank" 
         [attr.href]="liveServer"
+        class="underline"
         >Live Server</a>
-        <a 
-        target="_blank" 
+        <a target="_blank" 
         [attr.href]="repository"
+        class="underline"
         >Repository</a>
         <img src="{{ photoPath }}" alt="">
     </div>

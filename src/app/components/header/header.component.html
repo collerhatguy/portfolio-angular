@@ -1,3 +1,7 @@
-<header>
+<header [ngClass]="{'dark': dark}">
     <h1>Jacobs Portfolio</h1>
+    <div class="dark-btn underline"
+    (click)="handleClick()">
+        {{dark ? "Dark" : "Light"}} Theme
+    </div>
 </header>

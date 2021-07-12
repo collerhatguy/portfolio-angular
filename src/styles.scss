@@ -46,10 +46,52 @@ table {
     max-width: 100%;
     border: grey 1px solid;
     box-sizing: border-box;
+	.underline {
+		color: black;
+		&::after {
+			background-color: black;
+		}
+	}
+	&.dark {
+		background-color: black;
+		color: white;
+		&::after {
+			background-color: white;
+		}
+		.underline {
+			background-color: black;
+			color: white;
+			&::after {
+				background-color: white;
+			}
+		}
+	}
 }
 html {
 	font-size: 62.5%;
 }
 body {
 	font-size: 1.8rem;
+}
+.underline {
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	&:hover::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 2px;
+		animation: grow 300ms ease-in-out forwards;
+	}
+}
+@keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }

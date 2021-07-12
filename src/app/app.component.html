@@ -1,6 +1,16 @@
-<app-header></app-header>
-<main>
+<app-header [dark]="dark"
+(changeDark)="handleDark()"></app-header>
+<main [ngClass]="{'dark': dark}">
   <app-project-list></app-project-list>
 </main>
-<footer></footer>
+<footer [ngClass]="{'dark': dark}">
+  <h3>Contact:</h3>
+  <nav>
+    <a class="underline" 
+    href="mailto:jacobshomali3@gamil.com">Gmail</a>
+    <a class="underline"
+    href="linkedin.com/in/jacob-shomali-a206aa1ba ">LinkedIn</a>
+  </nav>
+</footer>
+
 <router-outlet></router-outlet>
