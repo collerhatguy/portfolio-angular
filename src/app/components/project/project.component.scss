@@ -6,13 +6,18 @@
     flex-direction: column;
     align-items: flex-start;
 }
+@mixin border {
+    border: solid grey 1px;
+    border-radius: 1rem;
+}
 .project, .reveal-btn, h2, h3, li, a {
     @include margin();
 }
 .project {
     @include flex-start();
+    @include border();
+    padding: 1rem;
     width: 100%;
-    border: solid grey 1px;
 }
 .header {
     width: 100%;
@@ -40,16 +45,26 @@
     }
 }
 .reveal-btn {
+    @include border();
     cursor: pointer;
-    padding: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    transition: 300ms;
+    &:hover {
+        margin: 1rem 0 1rem;
+        padding: 1rem 2rem;
+    }
 }
 .technologies {
     width: 100%;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-size: 2rem;
     font-weight: 600;
+    li {
+        margin: 1rem;
+    }
 }
 a {
     font-size: 2rem;
