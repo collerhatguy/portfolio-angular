@@ -11,6 +11,7 @@ export class ProjectComponent implements OnInit {
   liveServer!: string; 
   repository!: string;
   photoPath!: string;
+  visible: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,4 +21,7 @@ export class ProjectComponent implements OnInit {
     console.log(this.project)
   }
 
+  reveal() {
+    this.visible = !this.visible;
+  }
 }

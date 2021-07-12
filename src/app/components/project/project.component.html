@@ -1,24 +1,30 @@
 <div class="project">
-    <h2 
-    class="name"
-    >{{project.siteName}}</h2>
-    <h3>Technologies:</h3>
-    <ul  class="technologies">
-        <li 
-        *ngFor="let tech of project.technologies" 
-        >{{ tech }}</li>
-    </ul>
-    <h3 class="live-server">
+    <div class="header">
+        <h2 
+        class="name"
+        >{{project.siteName}}</h2>
+        <div 
+        class="reveal-btn"
+        (click)="reveal()"
+        >+</div>
+    </div>
+    <div 
+    [ngClass]="{'visible': visible}"
+    class="bottom">
+        <ul class="technologies">
+            <h3>Technologies:</h3>
+            <li 
+            *ngFor="let tech of project.technologies" 
+            >{{ tech }}</li>
+        </ul>
         <a  
         target="_blank" 
         [attr.href]="liveServer"
         >Live Server</a>
-    </h3>
-    <h3 class="repository">
         <a 
         target="_blank" 
         [attr.href]="repository"
         >Repository</a>
-    </h3>
-    <img src="{{ photoPath }}" alt="">
+        <img src="{{ photoPath }}" alt="">
+    </div>
 </div>
