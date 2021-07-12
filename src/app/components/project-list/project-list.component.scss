@@ -1,7 +1,6 @@
 ul {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }

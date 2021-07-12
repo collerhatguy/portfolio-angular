@@ -4,10 +4,9 @@
     >{{project.siteName}}</h2>
     <h3>Technologies:</h3>
     <ul  class="technologies">
-        <app-technologies 
+        <li 
         *ngFor="let tech of project.technologies" 
-        [tech]="tech"
-        ></app-technologies>
+        >{{ tech }}</li>
     </ul>
     <h3 class="live-server">
         <a  
@@ -21,8 +20,5 @@
         [attr.href]="repository"
         >Repository</a>
     </h3>
-   <div 
-        class="photo"
-        [ngStyle]="{ 'background-image': photoPath}">
-    </div>
+    <img src="{{ photoPath }}" alt="">
 </div>
