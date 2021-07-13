@@ -5,12 +5,12 @@
         (click)="reveal()"
         >{{project.siteName}}</h2>
         <div 
-        [@hover]="handleHover()"
-        class="reveal-btn"
+        class="btn"
         (click)="reveal()"
-        (mouseover)="handleHoverChange()"
-        (mouseleave)="handleHoverChange()"
-        >{{visible ? "-" : "+"}}</div>
+        >
+        <i *ngIf="!visible" class="fa-solid fa-arrow-up"></i>
+        <i *ngIf="visible" class="fa-solid fa-arrow-down"></i>
+    </div>
     </div>
     <div 
     [@reveal]="revealState()"

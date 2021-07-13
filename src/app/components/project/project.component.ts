@@ -29,19 +29,7 @@ import Project from 'src/Project';
         })
       ]))),
       transition("shown => hidden", animate("300ms ease-in-out")),
-    ]),
-    trigger("hover", [
-      state('notHover', style({
-        margin: '1rem 0',
-        padding: '0 1rem',
-      })),
-      state('hover', style({
-        margin: '1rem 0 1rem',
-        padding: '1rem 2rem',
-      })),
-      transition('hover => notHover', animate('300ms ease-in-out')),
-      transition('notHover => hover', animate('300ms ease-in-out')),
-    ]),
+    ])
   ]
 })
 export class ProjectComponent implements OnInit {

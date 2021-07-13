@@ -1,7 +1,10 @@
 <header [ngClass]="{'dark': dark}">
-    <h1>Jacobs Portfolio</h1>
-    <div class="dark-btn underline"
+    <h1>Jacob's Portfolio</h1>
+    <div class="btn"
     (click)="handleClick()">
-        {{dark ? "Dark" : "Light"}} Theme
+        <i *ngIf="dark"
+        class="fa-solid fa-moon"></i> 
+        <i *ngIf="!dark"
+        class="fa-solid fa-sun"></i>
     </div>
 </header>
