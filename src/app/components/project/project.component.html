@@ -5,12 +5,15 @@
         (click)="reveal()"
         >{{project.siteName}}</h2>
         <div 
+        [@hover]="handleHover()"
         class="reveal-btn"
         (click)="reveal()"
+        (mouseover)="handleHoverChange()"
+        (mouseleave)="handleHoverChange()"
         >{{visible ? "-" : "+"}}</div>
     </div>
     <div 
-    [ngClass]="{'visible': visible}"
+    [@reveal]="revealState()"
     class="bottom">
         <ul class="technologies">
             <h3>Technologies:</h3>

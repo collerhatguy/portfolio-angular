@@ -30,30 +30,12 @@
 .bottom {
     @include flex-start();  
     width: 100%;
+    transform-origin: center top;
     display: none;
-    &.visible {
-        transform-origin: center top;
-        animation: reveal 300ms ease-in-out forwards;
-    }
-}
-@keyframes reveal {
-    from {
-        transform: scaleY(0);
-    }
-    to {
-        transform: scaleY(1);
-    }
 }
 .reveal-btn {
     @include border();
     cursor: pointer;
-    margin: 1rem 0;
-    padding: 0 1rem;
-    transition: 300ms;
-    &:hover {
-        margin: 1rem 0 1rem;
-        padding: 1rem 2rem;
-    }
 }
 .technologies {
     width: 100%;
