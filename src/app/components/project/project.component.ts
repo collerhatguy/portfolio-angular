@@ -1,4 +1,4 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import Project from 'src/Project';
 
@@ -14,8 +14,20 @@ import Project from 'src/Project';
       })),
       state("hidden", style({
         transform: 'scaleY(0)',
+        display: 'none'
       })),
-      transition("hidden => shown", animate("0ms ease-in-out")),
+      transition("hidden => shown", animate("300ms", keyframes([
+        style({
+          transform: 'scaleY(0)', 
+          display: 'flex', 
+          offset: 0
+        }),
+        style({
+          transform: 'scaleY(1)', 
+          display: 'flex', 
+          offset: 1
+        })
+      ]))),
       transition("shown => hidden", animate("300ms ease-in-out")),
     ]),
     trigger("hover", [
