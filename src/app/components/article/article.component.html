@@ -1,0 +1,13 @@
+<li class="card content-container">
+    <h2 
+    class="underline"
+    (click)="reveal()"
+    >{{ article.header }}</h2>
+    <p>{{ article.date }}</p>
+    <div class="content-container"
+    [@reveal]="revealState()">
+        <p *ngFor="let paragraph of article.paragraphs">
+            {{ paragraph }}
+        </p>
+    </div>
+</li>

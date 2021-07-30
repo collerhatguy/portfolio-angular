@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import articles from 'src/article-data';
-import Article from 'src/Article';
+import articles from 'src/data/article-data';
+import Article from 'src/data/Article';
 
 @Component({
   selector: 'app-article-list',

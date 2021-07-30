@@ -2,8 +2,6 @@
 (changeDark)="handleDark()"></app-header>
 <main [ngClass]="{'dark': dark}">
   <router-outlet>
-    <app-project-list></app-project-list>
-    <app-article-list></app-article-list>
   </router-outlet>
 </main>
 <footer [ngClass]="{'dark': dark}">

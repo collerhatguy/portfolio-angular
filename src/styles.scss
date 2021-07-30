@@ -46,9 +46,6 @@ table {
     max-width: 100%;
     // border: grey 1px solid;
     box-sizing: border-box;
-	&:not(i) {
-		transition: 300ms;
-	}
 	.underline {
 		color: black;
 		&::after {
@@ -77,6 +74,7 @@ body {
 	font-size: 1.8rem;
 	position: relative;
 	font-family: "Inconsolata";
+	transition: 300ms;	
 }
 .underline {
 	cursor: pointer;
@@ -108,4 +106,32 @@ i {
     to {
         width: 100%;
     }
+}
+// reusable among cards 
+.card {
+    border: solid grey 1px;
+    border-radius: 1rem;
+}
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+h3, a {
+    font-size: 2rem;
+    font-weight: 700;
+}
+li, p {
+	font-weight: 600;
+}
+ul {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }

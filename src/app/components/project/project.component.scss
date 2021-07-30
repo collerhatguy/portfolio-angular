@@ -15,8 +15,6 @@
     @include margin();
 }
 .project {
-    @include flex-start();
-    @include border();
     padding: 1rem;
     width: 100%;
 }
@@ -25,11 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 3rem;
-    font-weight: 900;
 }
 .bottom {
-    @include flex-start();  
     width: 100%;
     transform-origin: center top;
 }
@@ -38,16 +33,11 @@
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    font-size: 2rem;
-    font-weight: 700;
     li {
         margin: 1rem;
-        font-weight: 600;
     }
 }
 a {
-    font-size: 2rem;
-    font-weight: 700;
     display: inline-block;
 }
 img {

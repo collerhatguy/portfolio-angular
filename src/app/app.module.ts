@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
+import { ArticleComponent } from './components/article/article.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { ArticleListComponent } from './components/article-list/article-list.com
     ProjectListComponent,
     ProjectComponent,
     ArticleListComponent,
+    ArticleComponent,
   ],
   imports: [
     BrowserModule,

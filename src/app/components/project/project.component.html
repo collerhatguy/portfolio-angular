@@ -1,9 +1,9 @@
-<div class="project">
+<div class="project card content-container">
     <div class="header">
         <h2 
-        class="name underline"
+        class="underline"
         (click)="reveal()"
-        >{{project.siteName}}</h2>
+        >{{ project.siteName }}</h2>
         <div 
         class="btn"
         (click)="reveal()"
@@ -14,14 +14,14 @@
     </div>
     <div 
     [@reveal]="revealState()"
-    class="bottom">
-        <ul class="technologies">
+    class="bottom content-container">
+        <ul class="technologies sub-header">
             <h3>Technologies:</h3>
             <li 
             *ngFor="let tech of project.technologies" 
             >{{ tech }}</li>
         </ul>
-        <a  target="_blank" 
+        <a target="_blank" 
         [attr.href]="liveServer"
         class="underline"
         >Live Server</a>
