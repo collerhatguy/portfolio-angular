@@ -1,1 +1,7 @@
-<p>article-list works!</p>
+<section *ngFor="let article in articles">
+    <h2>{{article.header}}</h2>
+    <p>{{article.date}}</p>
+    <p *ngFor="let paragraph in articles.paragraphs">
+        {{paragraph}}
+    </p>
+</section>

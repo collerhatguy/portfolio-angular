@@ -10,3 +10,4 @@ const articles: Article[] = [
         ]
     }
 ]
+export default articles;
