@@ -1,7 +1,10 @@
 <app-header [dark]="dark"
 (changeDark)="handleDark()"></app-header>
 <main [ngClass]="{'dark': dark}">
-  <app-project-list></app-project-list>
+  <router-outlet>
+    <app-project-list></app-project-list>
+    <app-article-list></app-article-list>
+  </router-outlet>
 </main>
 <footer [ngClass]="{'dark': dark}">
   <h3>Contact:</h3>
@@ -13,4 +16,3 @@
   </nav>
 </footer>
 
-<router-outlet></router-outlet>
