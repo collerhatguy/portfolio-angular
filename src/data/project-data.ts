@@ -13,7 +13,7 @@ const projects: Project[] = [
     {
         repoName:"crowd-funding-frontend-mentor-3",
         siteName: "Crowd Funding Site",
-        technologies: ["React", "JavaScript", "SCSS"]
+        technologies: ["React", "JavaScript", "SCSS", "REDUX"]
     },
     {
         repoName:"job-postings-react",
