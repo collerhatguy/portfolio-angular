@@ -1,6 +1,11 @@
 import Project from "./Project";
 const projects: Project[] = [
     {
+        repoName: "rock-paper-scissors",
+        siteName: "Rock, Paper, Scissors Game",
+        technologies: ["React", "JavaScript", "SCSS", "REDUX"]
+    },
+    {
         repoName:"countries",
         siteName: "Countries Website",
         technologies: ["React", "React-Router", "SCSS", "API"]
@@ -30,11 +35,6 @@ const projects: Project[] = [
         siteName: "Job Posting Site",
         technologies: ["React", "JavaScript", "SCSS"]
     },
-    // {
-    //     repoName: "rock-paper-scissors",
-    //     siteName: "Rock, Paper, Scissors Game",
-    //     technologies: ["React", "JavaScript", "SCSS"]
-    // },
     {
         repoName: "face-maker-2",
         siteName: "Face Maker App",
