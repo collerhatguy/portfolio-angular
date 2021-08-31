@@ -42,8 +42,6 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.liveServer = `https://collerhatguy.github.io/${this.project.repoName}/`;
-    this.repository = `https://github.com/collerhatguy/${this.project.repoName}/`;
     this.photoPath = `assets/projectPhotos/${this.project.repoName}.png`
   }
 
