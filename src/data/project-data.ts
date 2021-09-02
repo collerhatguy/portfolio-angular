@@ -19,7 +19,7 @@ const projects: Project[] = [
         siteName: "Jacob's Todo List",
         repository: `https://github.com/collerhatguy/todo-angular/`,
         liveServer: `https://collerhatguy.github.io/todo-angular/`,
-        technologies: ["Angular", "Typscript", "SCSS"]
+        technologies: ["Angular", "Typscript", "SCSS", "REDUX"]
     },
     {
         repoName:"crowd-funding-frontend-mentor-3",
