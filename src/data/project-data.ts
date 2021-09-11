@@ -12,7 +12,7 @@ const projects: Project[] = [
         siteName: "Countries Website",
         repository: `https://github.com/collerhatguy/countries/`,
         liveServer: `https://collerhatguy.github.io/countries/`,
-        technologies: ["React", "React-Router", "SCSS", "API"]
+        technologies: ["React", "REDUX", "React-Router", "SCSS", "API"]
     },
     {
         repoName:"todo-angular",
