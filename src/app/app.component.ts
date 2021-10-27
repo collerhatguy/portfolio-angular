@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-angular';
-  dark: boolean = false;
+  dark: boolean = true;
   handleDark() {
     this.dark = !this.dark;
+    localStorage.setItem("dark", JSON.stringify(this.dark))
+  }
+  ngOnInit() {
+    if (localStorage.getItem("dark")) {
+      this.dark = JSON.parse(localStorage.getItem("dark") || "")
+    } else {
+      localStorage.setItem("dark", JSON.stringify(this.dark))
+    }
   }
 }
