@@ -43,6 +43,13 @@ const projects: Project[] = [
         technologies: ["React", "React-Router", "SCSS", "API"]
     },
     {
+        repoName: "easy-bank-landing",
+        siteName: "Easy Bank Landing",
+        repository: `https://github.com/collerhatguy/easy-bank-landing/`,
+        liveServer: `https://collerhatguy.github.io/easy-bank-landing/`,
+        technologies: ["Angular", "SCSS"]
+    },
+    {
         repoName:"job-postings-react",
         siteName: "Job Posting Site",
         repository: `https://github.com/collerhatguy/job-postings-react/`,
