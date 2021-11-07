@@ -21,7 +21,9 @@
             *ngFor="let tech of project.technologies" 
             >{{ tech }}</li>
         </ul>
-        <a target="_blank" 
+        <a
+        *ngIf="project.liveServer != 'none'" 
+        target="_blank" 
         [attr.href]="project.liveServer"
         class="underline"
         >Live Server</a>

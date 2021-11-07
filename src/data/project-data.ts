@@ -1,6 +1,20 @@
 import Project from "./Project";
 const projects: Project[] = [
     {
+        repoName: "potlucks",
+        siteName: "Potlucks Frontend",       
+        repository: `https://github.com/Build-Week-Potluck-Planner-4/front-end`,
+        liveServer: `none`,
+        technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
+    },
+    {
+        repoName: "potlucks",
+        siteName: "Potluck Api",       
+        repository: `https://github.com/Build-Week-Potluck-Planner-4/back-end`,
+        liveServer: `https://potluck-planner-3.herokuapp.com/`,
+        technologies: ["Node", "Express", "SQL", "Postgres", "API"]
+    },
+    {
         siteName: "Rock, Paper, Scissors Game",
         repoName: "rock-paper-scissors",
         repository: `https://github.com/collerhatguy/rock-paper-scissors/`,
@@ -48,13 +62,6 @@ const projects: Project[] = [
         repository: `https://github.com/collerhatguy/easy-bank-landing/`,
         liveServer: `https://collerhatguy.github.io/easy-bank-landing/`,
         technologies: ["Angular", "SCSS"]
-    },
-    {
-        repoName:"job-postings-react",
-        siteName: "Job Posting Site",
-        repository: `https://github.com/collerhatguy/job-postings-react/`,
-        liveServer: `https://collerhatguy.github.io/job-postings-react/`,
-        technologies: ["React", "JavaScript", "SCSS"]
     },
     {
         repoName: "face-maker-2",
