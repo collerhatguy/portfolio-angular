@@ -21,13 +21,13 @@ const projects: Project[] = [
         liveServer: `https://collerhatguy.github.io/rock-paper-scissors/`,
         technologies: ["React", "JavaScript", "SCSS", "REDUX"]
     },
-    {
-        repoName:"countries",
-        siteName: "Countries Website",
-        repository: `https://github.com/collerhatguy/countries/`,
-        liveServer: `https://collerhatguy.github.io/countries/`,
-        technologies: ["React", "REDUX", "React-Router", "SCSS", "API"]
-    },
+    // {
+    //     repoName:"countries",
+    //     siteName: "Countries Website",
+    //     repository: `https://github.com/collerhatguy/countries/`,
+    //     liveServer: `https://collerhatguy.github.io/countries/`,
+    //     technologies: ["React", "REDUX", "React-Router", "SCSS", "API"]
+    // },
     {
         repoName:"todo-angular",
         siteName: "Jacob's Todo List",
