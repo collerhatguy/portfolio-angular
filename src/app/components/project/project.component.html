@@ -17,20 +17,21 @@
     class="bottom content-container">
         <ul class="technologies sub-header">
             <h3>Technologies:</h3>
-            <li 
-            *ngFor="let tech of project.technologies" 
-            >{{ tech }}</li>
+            <li *ngFor="let tech of project.technologies">
+                {{ tech }}
+            </li>
         </ul>
         <a
-        *ngIf="project.liveServer != 'none'" 
-        target="_blank" 
-        [attr.href]="project.liveServer"
-        class="underline"
+            *ngIf="project.liveServer" 
+            target="_blank" 
+            [attr.href]="project.liveServer"
+            class="underline"
         >Live Server</a>
-        <a target="_blank" 
-        [attr.href]="project.repository"
-        class="underline"
-        >Repository</a>
+        <a 
+            target="_blank" 
+            [attr.href]="project.repository"
+            class="underline"
+        >Repository Link</a>
         <img src="{{ photoPath }}" alt="">
     </div>
 </div>

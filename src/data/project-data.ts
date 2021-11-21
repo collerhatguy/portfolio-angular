@@ -4,7 +4,6 @@ const projects: Project[] = [
         repoName: "potlucks",
         siteName: "Potlucks Frontend",       
         repository: `https://github.com/Build-Week-Potluck-Planner-4/front-end`,
-        liveServer: `none`,
         technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
     },
     {
@@ -21,13 +20,12 @@ const projects: Project[] = [
         liveServer: `https://collerhatguy.github.io/rock-paper-scissors/`,
         technologies: ["React", "JavaScript", "SCSS", "REDUX"]
     },
-    // {
-    //     repoName:"countries",
-    //     siteName: "Countries Website",
-    //     repository: `https://github.com/collerhatguy/countries/`,
-    //     liveServer: `https://collerhatguy.github.io/countries/`,
-    //     technologies: ["React", "REDUX", "React-Router", "SCSS", "API"]
-    // },
+    {
+        repoName:"countries",
+        siteName: "Countries Website",
+        repository: `https://github.com/collerhatguy/countries/`,
+        technologies: ["React", "REDUX", "React-Router", "SCSS", "API"]
+    },
     {
         repoName:"todo-angular",
         siteName: "Jacob's Todo List",
