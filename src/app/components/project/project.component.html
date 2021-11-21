@@ -8,19 +8,13 @@
         class="btn"
         (click)="reveal()"
         >
-        <i *ngIf="!visible" class="fas fa-arrow-up"></i>
-        <i *ngIf="visible" class="fas fa-arrow-down"></i>
-    </div>
+            <i *ngIf="!visible" class="fas fa-arrow-up"></i>
+            <i *ngIf="visible" class="fas fa-arrow-down"></i>
+        </div>
     </div>
     <div 
     [@reveal]="revealState()"
     class="bottom content-container">
-        <ul class="technologies sub-header">
-            <h3>Technologies:</h3>
-            <li *ngFor="let tech of project.technologies">
-                {{ tech }}
-            </li>
-        </ul>
         <a
             *ngIf="project.liveServer" 
             target="_blank" 
@@ -32,6 +26,12 @@
             [attr.href]="project.repository"
             class="underline"
         >Repository Link</a>
+        <ul class="technologies sub-header">
+            <h3>Technologies:</h3>
+            <li *ngFor="let tech of project.technologies">
+                {{ tech }}
+            </li>
+        </ul>
         <img src="{{ photoPath }}" alt="">
     </div>
 </div>

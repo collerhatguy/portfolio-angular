@@ -10,7 +10,6 @@ const projects: Project[] = [
         repoName: "potlucks",
         siteName: "Potluck Api",       
         repository: `https://github.com/Build-Week-Potluck-Planner-4/back-end`,
-        liveServer: `https://potluck-planner-3.herokuapp.com/`,
         technologies: ["Node", "Express", "SQL", "Postgres", "API"]
     },
     {
