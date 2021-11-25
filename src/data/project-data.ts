@@ -1,6 +1,12 @@
 import Project from "./Project";
 const projects: Project[] = [
     {
+        repoName: "human-rights-first-docdb-fe",
+        siteName: "Human Right First Document Database",       
+        repository: `https://github.com/BloomTech-Labs/human-rights-first-docdb-fe`,
+        technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
+    },
+    {
         repoName: "potlucks",
         siteName: "Potlucks Frontend",       
         repository: `https://github.com/Build-Week-Potluck-Planner-4/front-end`,
