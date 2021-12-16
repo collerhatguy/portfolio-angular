@@ -1,22 +1,29 @@
 import Project from "./Project";
 const projects: Project[] = [
     {
+        repoName: "dan-schneider-nicknames",
+        siteName: "Dan Schneider Nicknames Site",       
+        repository: `https://github.com/dan-schneider-nicknames`,
+        liveServer: "https://frontend-olvu1oqle-dan-schneider-nicknames.vercel.app/",
+        technologies: ["React", "JavaScript", "React-Router", "Node", "GraphQL", "Express", "JWT"]
+    },
+    {
         repoName: "human-rights-first-docdb-fe",
         siteName: "Human Right First Document Database",       
         repository: `https://github.com/BloomTech-Labs/human-rights-first-docdb-fe`,
         technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
     },
+    // {
+    //     repoName: "potlucks",
+    //     siteName: "Potlucks Frontend",       
+    //     repository: `https://github.com/Build-Week-Potluck-Planner-4/front-end`,
+    //     technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
+    // },
     {
         repoName: "potlucks",
-        siteName: "Potlucks Frontend",       
-        repository: `https://github.com/Build-Week-Potluck-Planner-4/front-end`,
-        technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
-    },
-    {
-        repoName: "potlucks",
-        siteName: "Potluck Api",       
-        repository: `https://github.com/Build-Week-Potluck-Planner-4/back-end`,
-        technologies: ["Node", "Express", "SQL", "Postgres", "API"]
+        siteName: "Potlucks Website",       
+        repository: `https://github.com/Build-Week-Potluck-Planner-4`,
+        technologies: ["React", "REDUX", "Node", "Express", "SQL", "Postgres", "API"]
     },
     {
         siteName: "Rock, Paper, Scissors Game",
