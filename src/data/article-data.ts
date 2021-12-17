@@ -10,9 +10,11 @@ const articles: Article[] = [
         ]
     },
     // {
-    //     header: "Your first language",
-    //     date: "July 31st, 2021",
-    //     paragraphs: ["For those "]
+    //     header: "GraphQL vs REST",
+    //     date: "December 16th, 2021",
+    //     paragraphs: [
+    //         "  I just spent 2 weeks or so learnign GraphQL and I am here to tell you that I can never go back. "
+    //     ]
     // }
 ]
 export default articles;

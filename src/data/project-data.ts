@@ -4,7 +4,7 @@ const projects: Project[] = [
         repoName: "dan-schneider-nicknames",
         siteName: "Dan Schneider Nicknames Site",       
         repository: `https://github.com/dan-schneider-nicknames`,
-        liveServer: "https://frontend-olvu1oqle-dan-schneider-nicknames.vercel.app/",
+        liveServer: "https://frontend-fhw2uu0nx-dan-schneider-nicknames.vercel.app/",
         technologies: ["React", "JavaScript", "React-Router", "Node", "GraphQL", "Express", "JWT"]
     },
     {
