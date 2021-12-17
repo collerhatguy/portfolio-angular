@@ -4,7 +4,7 @@ const projects: Project[] = [
         repoName: "dan-schneider-nicknames",
         siteName: "Dan Schneider Nicknames Site",       
         repository: `https://github.com/dan-schneider-nicknames`,
-        liveServer: "https://frontend-fhw2uu0nx-dan-schneider-nicknames.vercel.app/",
+        liveServer: "https://dan-schneider-nicknames.github.io/frontend/",
         technologies: ["React", "JavaScript", "React-Router", "Node", "GraphQL", "Express", "JWT"]
     },
     {
@@ -13,12 +13,6 @@ const projects: Project[] = [
         repository: `https://github.com/BloomTech-Labs/human-rights-first-docdb-fe`,
         technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
     },
-    // {
-    //     repoName: "potlucks",
-    //     siteName: "Potlucks Frontend",       
-    //     repository: `https://github.com/Build-Week-Potluck-Planner-4/front-end`,
-    //     technologies: ["React", "JavaScript", "React-Router", "REDUX", "CSS"]
-    // },
     {
         repoName: "potlucks",
         siteName: "Potlucks Website",       
