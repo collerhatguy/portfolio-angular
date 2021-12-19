@@ -1,14 +1,15 @@
 <header [ngClass]="{'dark': dark}">
-    <h1>Jacob's Portfolio</h1>
-    <a class="underline"
-    routerLink="/">Projects</a>
-    <a class="underline"
-    routerLink="/articles">Articles</a>
-    <div class="btn"
-    (click)="handleClick()">
-        <i *ngIf="dark"
-        class="fa-solid fa-moon"></i> 
-        <i *ngIf="!dark"
-        class="fa-solid fa-sun"></i>
+    <a routerLink="/">
+        <h1 class="underline" >Jacob's Portfolio</h1>
+    </a>
+    <a class="underline" href="https://github.com/collerhatguy">
+        Github
+    </a>
+    <a class="underline" routerLink="/articles">
+        Articles
+    </a>
+    <div class="btn" (click)="handleClick()">
+        <i *ngIf="dark" class="fa-solid fa-moon"></i> 
+        <i *ngIf="!dark" class="fa-solid fa-sun"></i>
     </div>
 </header>
