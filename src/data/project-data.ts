@@ -1,6 +1,12 @@
 import Project from "./Project";
 const projects: Project[] = [
     {
+        repoName: "org-net2",
+        siteName: "Org Chart Api",       
+        repository: `https://github.com/collerhatguy/org-net2`,
+        technologies: [".Net 6", "C#", "SQL", "Enitity Framework Core"]
+    },
+    {
         repoName: "dan-schneider-nicknames",
         siteName: "Dan Schneider Nicknames Site",       
         repository: `https://github.com/dan-schneider-nicknames`,
